@@ -24,7 +24,7 @@ Developed a SpringBoot backend application for a Blogging site, used MySQL as da
 - Did role based access to APIs, admins have exclusive privileges to delete update, add new categories
 - The APIs take 300 - 400 milli seconds to respond
   
-### How to Run
+### How to Run a
 Download the jar file by running this command "java -jar blogging-app-apis-0.0.1-SNAPSHOT.jar" by navigating to the target directory of the github repo, the application will start running in port number 9090
 
 ### PostMan Collection
