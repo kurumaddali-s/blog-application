@@ -32,12 +32,7 @@ The Postman collections consists of sample API responses and calls made in this 
 User Entity
 |HTTP METHOD|PATH|PURPOSE|REQUEST BODY|
 |----|----|----|----|
-|POST|/api/users/|Add a new user|{<br>
-    "name":"sanjana",<br>
-    "email":"sanj@gmail.com",<br>
-    "password":"s123907",<br>
-    "about":"I am a coder"<br>
-}|
+|POST|/api/users/|Add a new user|{<br>"name":"sanjana",<br>"email":"sanj@gmail.com",<br>"password":"s123907",<br>"about":"I am a coder"<br>}|
 |GET|/api/users/|Returns all the users in database|None|
 |GET|/api/users/{userid}|Return details of the user with that userid|None|
 |PUT|/api/users/{userid}|Updates the details of the user with that userid|{</br>
