@@ -24,20 +24,19 @@ Developed a SpringBoot backend application for a Blogging site, used MySQL as da
 - Did role based access to APIs, admins have exclusive privileges to delete update, add new categories
 - The APIs take 300 - 400 milli seconds to respond
   
-### How to Run a
+### How to Run 
 Download the jar file by running this command "java -jar blogging-app-apis-0.0.1-SNAPSHOT.jar" by navigating to the target directory of the github repo, the application will start running in port number 9090
 
 ### PostMan Collection
 The Postman collections consists of sample API responses and calls made in this blogging application
 User Entity
-|col1|col2|col3|col4|
-|----|----|----|----|
 |HTTP METHOD|PATH|PURPOSE|REQUEST BODY|
-|POST|/api/users/|Add a new user|{</br>
-    "name":"sanjana",</br>
-    "email":"sanj@gmail.com",</br>
-    "password":"s123907",</br>
-    "about":"I am a coder"</br>
+|----|----|----|----|
+|POST|/api/users/|Add a new user|{<br>
+    "name":"sanjana",<br>
+    "email":"sanj@gmail.com",<br>
+    "password":"s123907",<br>
+    "about":"I am a coder"<br>
 }|
 |GET|/api/users/|Returns all the users in database|None|
 |GET|/api/users/{userid}|Return details of the user with that userid|None|
