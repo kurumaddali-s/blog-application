@@ -59,3 +59,11 @@ Post entities
 |PUT|/api/posts/{postid}|Updates the details of the post with that postid|{<br>"title" : "Movies",<br>"content" : "Oppenheimer is directed by Christopher Nolan"<br>}|
 |DELETE|/api/posts/{postid}|Deletes details of the post with that postid|None|
 
+Comment Entity
+|HTTP METHOD|PATH|PURPOSE|REQUEST BODY|
+|----|----|----|----|
+|POST|/api/post/{postid}/comments|Add a comment to the post with postid|{<br>"content":"Oppenheimer was a great movie",<br>"Date":"07-12-2023"<br>}|
+|GET|/api/comments/|Returns all the comments in database|None|
+|GET|/api/comments/{commentid}|Return details of the comment with that commentid|None|
+|PUT|/api/comments/{commentid}|Updates the details of the comment with that comment|{<br>"content":"Oppenheimer and Barbie were great movies",<br>"Date":"07-12-2023"<br>}|
+|DELETE|/api/comments/{commentid}|Deletes details of the comment with that commentid|None|
