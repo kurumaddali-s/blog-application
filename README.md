@@ -47,7 +47,7 @@ Categories Entity
 |PUT|/api/categories/{categoryid}|Updates the details of the category with that categoryid|{<br>"categoryTitle":"Sports News",<br>"categoryDescription": "This category contains all the details about indian sports"},<br>|
 |DELETE|/api/categories/{categoryid}|Deletes details of the category with that categoryid|None|
 
-Post entities
+Post Entity
 |HTTP METHOD|PATH|PURPOSE|REQUEST BODY|
 |----|----|----|----|
 |POST|api/user/{userid}/category/{categoryid}/posts|Add a new post in the category<br> with categoryid by user with userid|{<br>"title" : "Movies",<br>"content" : "Oppenheimer Barbie are releasing on the same day"<br>}|
