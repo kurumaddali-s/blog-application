@@ -37,3 +37,25 @@ User Entity
 |GET|/api/users/{userid}|Return details of the user with that userid|None|
 |PUT|/api/users/{userid}|Updates the details of the user with that userid|{</br>"name":"sanjana</br>"email":"sanj@gmail.com"</br>"password":"s123907",</br>"about":"I am a debugger"</br>}|
 |DELETE|/api/users/{userid}|Deletes details of the user with that userid|None|
+
+Categories Entity
+|HTTP METHOD|PATH|PURPOSE|REQUEST BODY|
+|----|----|----|----|
+|POST|/api/categories/|Add a new category|{<br>"categoryTitle":"Political News",,<br>"categoryDescription": "This category contains all the details about indian politics"},<br>|
+|GET|/api/categories/|Returns all the categories in database|None|
+|GET|/api/categories/{categoryid}|Return details of the category with that categoryid|None|
+|PUT|/api/categories/{categoryid}|Updates the details of the category with that categoryid|{<br>"categoryTitle":"Sports News",<br>"categoryDescription": "This category contains all the details about indian sports"},<br>|
+|DELETE|/api/categories/{categoryid}|Deletes details of the category with that categoryid|None|
+
+Post entities
+|HTTP METHOD|PATH|PURPOSE|REQUEST BODY|
+|----|----|----|----|
+|POST|api/user/{userid}/category/{categoryid}/posts|Add a new post in the category<br> with categoryid by user with userid|{<br>"title" : "Movies",<br>"content" : "Oppenheimer Barbie are releasing on the same day"<br>|
+|GET|api/category/{categoryid}/posts|Returns all the posts in the category|None|
+|GET|/api/users/{userid}/posts|Return all the posts done by the user|None|
+|GET|/api/posts|Return all the posts in the database|None|
+|GET|/api/posts/{postid}|Return details of the post with id as postid|None|
+|GET|/api/posts/search/{titlekey}|Return all the posts with titles containing titlekey|None|
+|PUT|/api/posts/{postid}|Updates the details of the post with that postid|{{<br>"title" : "Movies",<br>"content" : "Oppenheimer is directed by Christopher Nolan"<br>}|
+|DELETE|/api/posts/{postid}|Deletes details of the post with that postid|None|
+
