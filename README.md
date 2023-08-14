@@ -29,3 +29,22 @@ Download the jar file by running this command "java -jar blogging-app-apis-0.0.1
 
 ### PostMan Collection
 The Postman collections consists of sample API responses and calls made in this blogging application
+User Entity
+|col1|col2|col3|col4|
+|----|----|----|----|
+|HTTP METHOD|PATH|PURPOSE|REQUEST BODY|
+|POST|/api/users/|Add a new user|{</br>
+    "name":"sanjana",</br>
+    "email":"sanj@gmail.com",</br>
+    "password":"s123907",</br>
+    "about":"I am a coder"</br>
+}|
+|GET|/api/users/|Returns all the users in database|None|
+|GET|/api/users/{userid}|Return details of the user with that userid|None|
+|PUT|/api/users/{userid}|Updates the details of the user with that userid|{</br>
+    "name":"sanjana",</br>
+    "email":"sanj@gmail.com",</br>
+    "password":"s123907",</br>
+    "about":"I am a debugger"</br>
+}|
+|DELETE|/api/users/{userid}|Deletes details of the user with that userid|None|
